@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf);
+    font-weight: normal
+}
+
+@font-face {
+    font-family: bebas;
+    src: url(fontes/BebasNeue-Regular.otf);
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: 'Bebas', cursive;
+    --fonte-android: 'android', cursive;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+.cabecalho {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+}
+
+.cabecalho-titulo {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    font-weight: normal;
+    padding-top: 40px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.199);
+}
+
+.cabecalho-texto {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    color: white;
+    padding: 20px;
+    max-width: 550px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.199);
+}
+
+.menu {
+    background-color: var(--cor5);
+    padding: 15px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.200);
+}
+
+.menu-item{
+    text-decoration: none;
+    color: var(--cor0);
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.menu-item:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+    transition-duration: 0.5s;
+}
+
+.conteudo strong {
+    color: var(--cor4);
+    font-weight: bold;    
+}
+
+.conteudo a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--cor1);
+    color: var(--cor5); 
+    padding: 2px 6px;
+}
+
+.conteudo a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+.conteudo {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+}
+
+.conteudo-principal-titulo { 
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.conteudo-principal-subtitulo {
+    font-family: var(--fonte-android);
+    font-size: 1.1em;
+    font-weight: normal;
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding: 3px 15px;
+    border-radius: 8px;
+}
+
+.conteudo-principal-texto {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 25px;
+    font-size: 1em;
+    line-height: 1.5em;
+    
+}
+
+.conteudo-principal-imagem {
+    width: 100%;
+}
+
+.conteudo-principal-imagem-ajustada {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.conteudo-principal-video {
+    background-color: var(--cor5);
+    margin: 0px -15px 30px -15px;
+    padding: 20px;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.conteudo-principal-video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.link-externo::after {
+    content: '\1F517';  
+}
+
+.conteudo-secundario {
+    background-color: var(--cor1);  
+    padding: 10px;  
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.356);
+}
+
+.conteudo-secundario-titulo {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.conteudo-secundario-texto {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 25px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.conteudo-secundario-lista {
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;    
+}
+
+.agradecimentos {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 25px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.rodape {
+    background-color: var(--cor5);
+    color: white;    
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;    
+}
+
+.rodape a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+    color: var(--cor2);        
+}
+
+
+
+
+
+
+
+
+
+
+
+
