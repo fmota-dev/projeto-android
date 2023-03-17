@@ -2,13 +2,13 @@
 
 @font-face {
     font-family: android;
-    src: url(fontes/idroid.otf);
+    src: url(../fontes/idroid.otf);
     font-weight: normal
 }
 
 @font-face {
     font-family: bebas;
-    src: url(fontes/BebasNeue-Regular.otf);
+    src: url(../fontes/BebasNeue-Regular.otf);
 }
 
 :root {
