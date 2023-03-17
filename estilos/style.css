@@ -226,7 +226,7 @@ body {
     color: var(--cor2);        
 }
 
-@media screen and (max-width:380px) {
+@media screen and (max-width:460px) {
     .cabecalho {
         background-image: linear-gradient(to bottom, var(--cor5), var(--cor3));
         min-height: 100px;
@@ -234,7 +234,7 @@ body {
     }
 
     .cabecalho-texto {
-        display: none;
+        font-size: 13px;
     }
     
     .conteudo-principal-titulo {
@@ -246,14 +246,14 @@ body {
         display: flex;
         align-items: center;
         flex-wrap: nowrap;
-        font-size: 14px;
+        font-size: 13px;
         padding: 15px;
         gap: 5px;
     }
 
 }
 
-@media screen and (max-width:330px) {
+@media screen and (max-width:340px) {
     .menu {
         min-width: 90%;
         max-width: 90%;
